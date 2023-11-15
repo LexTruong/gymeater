@@ -1,0 +1,132 @@
+body {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#showcase {
+    background-color: #6aa2b8; 
+    /* background-image: url("/imgs/arc_outside2.jpg"); */
+    height: 600px;
+    text-align: center;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+}
+
+#title {
+    font-size: 150px;
+    padding-top: 150px;
+}
+
+#gym {
+    font-size: 150px;
+    color: rgb(0, 62, 120);
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    text-shadow: 3px 3px black;
+}
+
+#eater {
+    color: rgb(253, 185, 19);
+    text-shadow: 6px 6px black;
+}
+
+#slogan {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 33px;
+    font-style : italic;
+    color: black;
+}
+
+#navbar {
+    background-color: #f78d2d;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+#logo {
+    float: left;
+}
+
+li {
+    float: right;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+  
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  /* Change the link color to #111 (black) on hover */
+li a:hover {
+    color: grey;
+}
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 27%;
+    padding: 0 10px;
+    padding: 0 50px 0 30px;
+  }
+  
+#cards {
+    padding: 50px;
+    background-color: white;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the counter cards */
+.card {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 25px;
+    text-align: center;
+    background-color: #c6beb5;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.btn {
+    font-size: 30px;
+    color:rgb(0, 62, 120);
+    background-color: rgb(253, 185, 19);
+    border-radius: 50px;
+    padding: 15px 40px;
+}
+
