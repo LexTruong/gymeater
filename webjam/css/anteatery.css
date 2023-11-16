@@ -38,6 +38,15 @@ li a:hover {
     color: grey;
 }
 
+#title {
+    font-size: 40px;
+    text-align: center;
+}
+
+.food {
+    padding-left: 40px;
+}
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -45,9 +54,10 @@ table {
   }
   
   td, th {
-    border: 1px solid #dddddd;
+    border-bottom: 5px solid black;
     text-align: left;
     padding: 8px;
+    width: 60%;
   }
   
   tr:nth-child(even) {
