@@ -49,20 +49,33 @@ li a:hover {
     text-align: center;
     padding : 20px;
     font-family : "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-    text-shadow: 3px 3px grey;
+    text-shadow: 3px 3px lightgray;
 }
 
 #bus {
     position: absolute;
     bottom: 0;
-    left: 25%;
-    width: 45%;
+    left: 500px;
+    width: 500px;
+}
+
+#time{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#map{
+    position: absolute;
+    bottom: 40%;
+    width: 370px;
+    left : 70%;
+    border: 3px solid black;
 }
 
 #business {
     background-color: #c6beb5;
     text-align: center;
-    height: 600px;
+    height: 400px;
 }
 
 .row {
@@ -75,4 +88,10 @@ flex: 50%;
 
 #answer {
     color: #1b3d6d;
+    font-weight: bold;
+    font-size: 75px;
+}
+
+p {
+    font-size: 30px;
 }

@@ -130,3 +130,6 @@ h3 {
     padding: 15px 40px;
 }
 
+button:hover {
+    background-color: #f78d2d;
+}
