@@ -49,7 +49,7 @@ li a:hover {
     text-align: center;
     padding : 20px;
     font-family : "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-    text-shadow: 3px 3px grey;
+    text-shadow: 3px 3px lightgray;
 }
 
 #bus {
@@ -75,4 +75,17 @@ flex: 50%;
 
 #answer {
     color: #1b3d6d;
+}
+
+#time{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#map{
+    position: absolute;
+    bottom: 40%;
+    width: 370px;
+    left : 70%;
+    border: 3px solid black;
 }
