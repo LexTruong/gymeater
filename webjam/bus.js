@@ -6,7 +6,7 @@ var AM = "AM";
 if(curHour > 12) AM = "PM";
 if(curMins < 10) curMins = "0" + curMins;
 
-document.getElementById("time").innerHTML = `The time is ${curHour%12}:${curMins} ${AM} and the ARC is currently`;
+document.getElementById("curtime").innerHTML = `The time is ${curHour%12}:${curMins} ${AM} and the ARC is currently`;
 
 if(curDay == 6 && (curHour < 8 || curHour > 21)) {
     document.getElementById("answer").innerHTML = "CLOSED";

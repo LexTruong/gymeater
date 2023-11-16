@@ -5,7 +5,8 @@ body {
 }
 
 #showcase {
-    background-color: #6aa2b8; 
+    /* background-color: #6aa2b8;  */
+    background-color: #577E90;
     /* background-image: url("/imgs/arc_outside2.jpg"); */
     height: 600px;
     text-align: center;
@@ -38,7 +39,7 @@ body {
 }
 
 #navbar {
-    background-color: #f78d2d;
+    /* background-color: #f78d2d; */
 }
 
 ul {
@@ -133,3 +134,9 @@ h3 {
 button:hover {
     background-color: #f78d2d;
 }
+
+#petr {
+    position: center;
+    
+}
+
