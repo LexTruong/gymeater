@@ -5,8 +5,7 @@ body {
 }
 
 #showcase {
-    /* background-color: #6aa2b8;  */
-    background-color: #577E90;
+    background-color: #4771A4; 
     /* background-image: url("/imgs/arc_outside2.jpg"); */
     height: 600px;
     text-align: center;
@@ -20,6 +19,8 @@ body {
 }
 
 #gym {
+    margin-left: -800px;
+    text-align: left;
     font-size: 150px;
     color: rgb(0, 62, 120);
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
@@ -27,19 +28,21 @@ body {
 }
 
 #eater {
+    text-align: left;
     color: rgb(253, 185, 19);
     text-shadow: 6px 6px black;
 }
 
 #slogan {
+    margin-left: -1200px;
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     font-size: 33px;
     font-style : italic;
     color: black;
 }
 
-/* #navbar {
-    /* background-color: #f78d2d; 
+#navbar {
+    /* background-color: #f78d2d; */
 }
 */
 
@@ -58,9 +61,11 @@ li {
     float: right;
     padding: 10px 20px;
     font-size: 20px;
+    font-weight: bold;
 }
   
 li a {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     display: block;
     color: black;
     text-align: center;
@@ -132,12 +137,10 @@ h3 {
     padding: 15px 40px;
 }
 
-button:hover {
-    background-color: #f78d2d;
+#sports {
+    position: absolute;
+    right: 150px;
+    top: 177px;
+    width: 650px;
+    height: 500px;
 }
-
-#petr {
-    position: center;
-    
-}
-
