@@ -8,6 +8,10 @@ let response = fetch("https://corsproxy.io/?" + encodeURIComponent("https://uci.
 }).then(response => response.json()).then(data => {
     let menuItems = data.Menu.MenuProducts;
 
+    menuItems.foreach((item) => {
+        
+    })
+
     console.log(menuItems);
 })
 
