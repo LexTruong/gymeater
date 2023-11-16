@@ -6,13 +6,21 @@ let hour = curTime.getHours();
 let mealTime;
 if(day == 0 || day == 6) {
     if(hour >= 9 && hour < 11) mealTime = "48";
-    else if(hour >= 11 && (hour <= 16 && min < 30)) mealTime = "265";
-    else if((hour >= 16 && min >= 30) && hour < 20) mealTime = "107";
+    else if(hour >= 11 && hour <= 16) mealTime = "265";
+    else if(hour == 16) {
+        if(min < 30) mealTime = "265";
+        else mealTime = "107"
+    }
+    else if(hour >= 16 && hour < 20) mealTime = "107";
     else mealTime = "CLOSED";
 } else {
     if((hour >= 7 && min >= 15) && hour < 11) mealTime = "48";
-    else if(hour >= 11 && (hour <= 16 && min < 30)) mealTime = "106";
-    else if((hour >= 16 && min >= 30) && hour < 20) mealTime = "107";
+    else if(hour >= 11 && hour <= 16) mealTime = "106";
+    else if(hour == 16) {
+        if(min < 30) mealTime = "106";
+        else mealTime = "107"
+    }
+    else if(hour >= 16 && hour < 20) mealTime = "107";
     else if(hour >= 20 && hour <= 23) {
         if(day == 5) mealTime = "CLOSED";
         else mealTime = "108"
