@@ -5,7 +5,7 @@ body {
 }
 
 #showcase {
-    background-color: #6aa2b8; 
+    background-color: #4771A4; 
     /* background-image: url("/imgs/arc_outside2.jpg"); */
     height: 600px;
     text-align: center;
@@ -86,7 +86,7 @@ li a:hover {
     padding: 0 50px 0 30px;
   }
   
-#cards {
+.tag {
     padding: 50px;
     background-color: white;
 }
@@ -144,3 +144,92 @@ h3 {
     width: 650px;
     height: 500px;
 }
+
+.divider {
+    width: 70%;
+}
+.feature-heading {
+    overflow: hidden;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+.text-desc {
+    overflow: hidden;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 25px;
+    margin-left: 300px;
+    margin-top: -30px;
+    inline-size: 450px;
+    overflow-wrap:break-word;
+}
+
+.test-desc.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.butt {
+    color: black;
+    overflow: hidden;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    margin-left: 290px;
+    text-decoration: underline;
+}
+
+#divide {
+    width: 70%;
+}
+
+#feature-heading1 {
+    overflow: hidden;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    margin-left: 700px;
+    margin-top: 50px;
+}
+
+#text-desc1 {
+    overflow: hidden;
+    flex-wrap: wrap;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 25px;
+    margin-left: 700px;
+    margin-top: -30px;
+    inline-size: 450px;
+    overflow-wrap:break-word;
+}
+
+#butt1 {
+    color: black;
+    overflow: hidden;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    margin-left: 995px;
+    text-decoration: underline;
+}
+
+#work {
+    position: absolute;
+    left: 220px;
+    top: 1150px;
+    width: 550px;
+    height: 350px;
+}
+#work2 {
+    position: absolute;
+    left: 750px;
+    top: 1500px;
+    width: 700px;
+    height: 500px;
+}
+
