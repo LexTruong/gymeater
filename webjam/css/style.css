@@ -5,12 +5,13 @@ body {
 }
 
 #showcase {
-    background-color: #4771A4; 
+    background-color: #6aa2b8; 
     /* background-image: url("/imgs/arc_outside2.jpg"); */
     height: 600px;
     text-align: center;
     border-top: 4px solid black;
     border-bottom: 4px solid black;
+    padding-left: 200px;
 }
 
 #title {
@@ -42,9 +43,8 @@ body {
 }
 
 #navbar {
-    /* background-color: #f78d2d; */
+    background-color: white;
 }
-*/
 
 ul {
     list-style-type: none;

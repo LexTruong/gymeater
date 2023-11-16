@@ -1,6 +1,5 @@
 let curTime = new Date()
 let date = curTime.toLocaleDateString();
-console.log(date);
 let day = curTime.getDay();
 let min = curTime.getMinutes();
 let hour = curTime.getHours();
@@ -21,9 +20,7 @@ if(day == 0 || day == 6) {
     else mealTime = "CLOSED";
 }
 
-mealTime = "107";
-
-if(mealTime == "CLOSED") document.getElementById("title").innerHTML = "CLOSED";
+if(mealTime == "CLOSED") document.getElementById("CLOSED").innerHTML = "CLOSED";
 else {
     let response = fetch("https://corsproxy.io/?" + encodeURIComponent("https://uci.campusdish.com/api/menu/GetMenus?locationId=3056&storeIds=&mode=Daily&date=" + date + "&time=&periodId=" + mealTime + "&fulfillmentMethod="),
     {
