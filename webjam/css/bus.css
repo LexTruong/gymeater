@@ -88,10 +88,17 @@ flex: 50%;
 
 #answer {
     color: #1b3d6d;
-    font-weight: bold;
-    font-size: 75px;
 }
 
-p {
-    font-size: 30px;
+#time{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#map{
+    position: absolute;
+    bottom: 40%;
+    width: 370px;
+    left : 70%;
+    border: 3px solid black;
 }
