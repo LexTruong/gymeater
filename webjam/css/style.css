@@ -151,9 +151,12 @@ h3 {
 
 .divider {
     width: 70%;
+    margin-top: 75px;
 }
+
+
+
 .feature-heading {
-    overflow: hidden;
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     font-size: 50px;
     font-weight: 400;
@@ -162,8 +165,6 @@ h3 {
 }
 
 .text-desc {
-    position: relative;
-    overflow: hidden;
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     font-size: 25px;
     margin-left: 300px;
@@ -172,14 +173,8 @@ h3 {
     overflow-wrap:break-word;
 }
 
-.test-desc.visible {
-    opacity: 1;
-    transform: translate(0, 0);
-}
-
 .butt {
     color: black;
-    overflow: hidden;
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     border: none;
     background-color: white;
@@ -188,16 +183,12 @@ h3 {
     text-decoration: underline;
 }
 
-#divide {
-    width: 70%;
-}
-
 #feature-heading1 {
     overflow: hidden;
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     font-size: 50px;
     font-weight: 400;
-    margin-left: 1000px;
+    margin-left: 900px;
     margin-top: 50px;
 }
 
@@ -206,7 +197,7 @@ h3 {
     flex-wrap: wrap;
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     font-size: 25px;
-    margin-left: 1000px;
+    margin-left: 900px;
     margin-top: -30px;
     inline-size: 450px;
     overflow-wrap:break-word;
@@ -219,30 +210,33 @@ h3 {
     border: none;
     background-color: white;
     font-size: 20px;
-    margin-left: 995px;
+    margin-left: 895px;
     text-decoration: underline;
 }
 
-#work {
+#work0 {
+    position:absolute;
+    width: 375px;
+    height: 325px;
+    left: 950px;
+    top: 775px;
+}
+
+#work1 {
     position: absolute;
-    left: 350px;
+    left: 375px;
     top: 1150px;
-    width: 550px;
-    height: 350px;
+    width: 325px;
+    height: 330px;
 }
 #work2 {
-    position: absolute;
-    left: 900px;
-    top: 1500px;
-    width: 700px;
-    height: 500px;
+    position:absolute;
+    float: right;
+    width: 350px;
+    height: 300px;
+    left: 950px;
+
 }
-#work0 {
-    position: absolute;
-    left: 900px;
-    top: 720px;
-    width: 600px;
-    height: 400px;
-}
+
 
 
