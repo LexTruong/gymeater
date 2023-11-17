@@ -26,17 +26,17 @@
         <div class="row">
           <div class="column">
             <h2 id="courtname">Basketball</h2>
-            <h2 id="basketballTimes">Closed for Drop-In</h2>
+            <h2 id="basketballTimes" style="color: red">Closed for Drop-In</h2>
             <img id="basket" src="imgs/basketball.png" alt="eat">
           </div>
           <div class="column">
             <h2 id="courtname">Volleyball</h2>
-            <h2 id="volleyballTImes">Closed for Drop-In</h2>
+            <h2 id="volleyballTimes" style="color: red">Closed for Drop-In</h2>
             <img id="volley" src="imgs/volley.png" alt="eat">
           </div>
           <div class="column">
             <h2 id="courtname">Badminton</h2>
-            <h2 id="badmintonTimes">Closed for Drop-In</h2>
+            <h2 id="badmintonTimes" style="color: red">Closed for Drop-In</h2>
             <img id="badm" src="imgs/badm.png" alt="eat">
           </div>
       </section>
@@ -55,28 +55,28 @@
               <form id="optionsform" action="javascript: createTeam()">
                 <div id="sportchoice">
                   <p>Choose a Sport:</p>
-                  <input type="radio" name="sports" value="Basketball">
+                  <input id="basketball" type="radio" name="sports" value="Basketball">
                   <label for="basketball">Basketball</label><br>
-                  <input type="radio" name="sports" value="Volleyball">
+                  <input id="volleyball" type="radio" name="sports" value="Volleyball">
                   <label for="volleyball">Volleyball</label><br>
-                  <input type="radio" name="sports" value="Badminton">
+                  <input id="badminton" type="radio" name="sports" value="Badminton">
                   <label for="badminton">Badminton</label><br>
                 </div>
                 <div id="skillchoice">
                   <p>Choose a Skill Level:</p>
-                  <input type="radio" name="skill" value="Expert">
+                  <input id="Expert" type="radio" name="skill" value="Expert">
                   <label for="Expert">Expert</label><br>
-                  <input type="radio" name="skill" value="Intermediate">
+                  <input id="Intermediate" type="radio" name="skill" value="Intermediate">
                   <label for="Intermediate">Intermediate</label><br>
-                  <input type="radio" name="skill" value="New">
+                  <input id="New" type="radio" name="skill" value="New">
                   <label for="New">New</label><br>
                 </div>
                 <div id="timechoice">
                   <label for="playtime">Time (XX:XX):</label>
                   <input type="text" id="playtime"><br>
-                  <input type="radio" name="am" value="AM">
+                  <input id="AM" type="radio" name="am" value="AM">
                   <label for="AM">AM</label><br>
-                  <input type="radio" name="am" value="PM">
+                  <input id="PM" type="radio" name="am" value="PM">
                   <label for="PM">PM</label><br>
                 </div>
                 <input type="submit" value="Create Team">
@@ -100,6 +100,7 @@
 
       </section>
 
-      <script type="module" src="js/arc.js"></script>
+      <script src="js/availability.js"></script>
+      <script src="js/arc.js"></script>
     </body>
 </html> 

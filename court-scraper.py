@@ -50,32 +50,48 @@ for i in range(stop_index):
     close_button.click()
     driver.quit()
 
-info = []
+# info = []
+info = {
+    "lines": []
+}
 # Store info in list by court, num, time
 for i in range(stop_index):
+    line_info = {}
     court = times[i]
     t = full_times[i]
     court_info = ''
     if 'Basketball' in court:
-        court_info += 'Basketball,'
+        # court_info += 'Basketball,'
+        line_info['name'] = 'Basketball'
+        # line_info['courts'] = '1 and 2'
     elif 'Volleyball' in court:
-        court_info += 'Volleyball,'
+        # court_info += 'Volleyball,'
+        line_info['name'] = 'Volleyball'
+        # line_info['courts'] = '3'
     elif 'Badminton' in court:
-        court_info += 'Badminton,'
+        # court_info += 'Badminton,'
+        line_info['name'] = 'Badminton'
     
-    # Get the num
-    if '&' in court:
-        court_info += '2,'
-    else:
-        court_info += '1,'
+    # Get the court num
+    # if '&' in court:
+    #     court_info += '2,'
+    # else:
+    #     court_info += '1,'
 
     # Get the times
-    court_info += t[5:]
-    info.append(court_info)
+    # court_info += t[5:]
+    # info.append(court_info)
+    line_info['times'] = t[5:]
 
+    info["line"].append(line_info)
 
 # Create file again
-with open('court_times.txt', 'w') as f:
-    for line in info:
-        f.write(line)
-        f.write('\n')
+# with open('court_times.txt', 'w') as f:
+#     for line in info:
+#         f.write(line)
+#         f.write('\n')
+
+import json
+
+with open('court_info.json', 'w') as outfile:
+    json.dump(info, outfile)

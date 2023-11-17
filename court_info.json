@@ -1,0 +1,12 @@
+{
+    "lines": [
+        {
+            "name": "Basketball",
+            "times": "6:00 AM  - 5:00 PM"
+        },
+        {
+            "name": "Volleyball",
+            "times": "12:00 PM  - 11:30 PM"
+        }
+    ]
+}
