@@ -5,7 +5,8 @@ body {
 }
 
 #navbar {
-    background-color: #f78d2d;
+    background-color: white;
+    border-bottom: 4px solid black;
 }
 
 ul {
@@ -41,6 +42,8 @@ li a:hover {
 .title {
     font-size: 50px;
     padding: 30px;
+    text-align: center;
+    margin: 0;
 }
 
 #courts {
@@ -58,8 +61,50 @@ li a:hover {
     flex: 50%;
 }
 
+#info {
+    float: left;
+    padding-left: 50px;
+    width: 35%;
+}
+
+#displayteams {
+    float: left;
+    margin-left: 20px;
+}
+
 #team {
-    text-align: center;
     background-color: #c6beb5;
     height: 600px;
 }
+
+#nameinput {
+    padding-bottom: 20px;
+}
+
+#timechoice {
+    margin: 20px 0;
+}
+
+#options {
+    padding-bottom: 20px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    border: 2px solid black;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  tr:nth-child(odd) {
+    background-color: white;
+  }

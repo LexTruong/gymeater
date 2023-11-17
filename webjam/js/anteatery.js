@@ -76,7 +76,5 @@ else {
                 <p>Vitamin C: ${item.Product.VitaminC}</p>
             `;
         })
-
-        console.log(menuItems);
     })
 }

@@ -5,7 +5,8 @@ body {
 }
 
 #navbar {
-    background-color: #f78d2d;
+    background-color: white;
+    border-bottom: 4px solid black;
 }
 
 ul {

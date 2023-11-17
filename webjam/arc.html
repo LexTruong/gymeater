@@ -13,9 +13,9 @@
       <div id="navbar">
           <ul>
               <li id="logo"><a href="index.html"><img src="..." alt="">LOGO</a></li>
-              <li><a href="anteatery.html">Eat Well</a></li>
-              <li><a href="arc.html">Play Hard</a></li>
-              <li><a href="bus.html">Get There</a></li>
+              <li><a href="anteatery.html">EAT WELL</a></li>
+              <li><a href="arc.html">PLAY HARD</a></li>
+              <li><a href="bus.html">GET THERE</a></li>
           </ul>
       </div>
   </section>
@@ -26,22 +26,17 @@
         <div class="row">
           <div class="column">
             <h2 id="courtname">Basketball</h2>
-            <h3 id="availability">0/0</h3>
+            <h3 id="availability">0/3</h3>
             <img src="..." alt="" id="courtimg">
           </div>
           <div class="column">
             <h2 id="courtname">Volleyball</h2>
-            <h3 id="availability">0/0</h3>
+            <h3 id="availability">0/1</h3>
             <img src="..." alt="" id="courtimg">
           </div>
           <div class="column">
-            <h2 id="courtname">Tennis</h2>
-            <h3 id="availability">0/0</h3>
-            <img src="..." alt="" id="courtimg">
-          </div>
-          <div class="column">
-            <h2 id="courtname">Racquetball</h2>
-            <h3 id="availability">0/0</h3>
+            <h2 id="courtname">Badminton</h2>
+            <h3 id="availability">0/4</h3>
             <img src="..." alt="" id="courtimg">
           </div>
       </section>
@@ -49,7 +44,62 @@
       <!--TEAM-->
       <section id="team">
         <h1 class="title">Find a Team</h1>
-        <form action="..."></form>
+        <div id="formteam">
+          <div id="info">
+            <form id="nameinput" action="">
+              <label for="name">Name:</label>
+              <input type="text" id="name"><br>
+            </form>
+            
+            <div id="options" style="display: none;">
+              <form id="optionsform" action="javascript: createTeam()">
+                <div id="sportchoice">
+                  <p>Choose a Sport:</p>
+                  <input type="radio" name="sports" value="Basketball">
+                  <label for="basketball">Basketball</label><br>
+                  <input type="radio" name="sports" value="Volleyball">
+                  <label for="volleyball">Volleyball</label><br>
+                  <input type="radio" name="sports" value="Badminton">
+                  <label for="badminton">Badminton</label><br>
+                </div>
+                <div id="skillchoice">
+                  <p>Choose a Skill Level:</p>
+                  <input type="radio" name="skill" value="Expert">
+                  <label for="Expert">Expert</label><br>
+                  <input type="radio" name="skill" value="Intermediate">
+                  <label for="Intermediate">Intermediate</label><br>
+                  <input type="radio" name="skill" value="New">
+                  <label for="New">New</label><br>
+                </div>
+                <div id="timechoice">
+                  <label for="playtime">Time (XX:XX):</label>
+                  <input type="text" id="playtime"><br>
+                  <input type="radio" name="am" value="AM">
+                  <label for="AM">AM</label><br>
+                  <input type="radio" name="am" value="PM">
+                  <label for="PM">PM</label><br>
+                </div>
+                <input type="submit" value="Create Team">
+              </form>
+            </div>
+          </div>
+  
+          <div id="displayteams">
+            <table id="teams">
+              <tr>
+                <th style="width: 75px">Time</th>
+                <th style="width: 100px">Sport</th>
+                <th style="width: 100px">Skill Level</th>
+                <th style="width: 400px">People</th>
+                <th style="width: 100px"></th>
+              </tr>
+            </table>
+            <button onclick="displayText()" style="margin-top: 50px;">Create a Team</button>
+          </div>
+        </div>
+
       </section>
+
+      <script src="js/arc.js"></script>
     </body>
 </html> 
