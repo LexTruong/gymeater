@@ -20,6 +20,16 @@ driver.get('https://campusrec.mhsoftware.com/IFrameList.jsp?calendar_id=1&dayspa
 time.sleep(1)
 links = driver.find_elements(By.TAG_NAME, 'dd')
 links[0].click()
-time.sleep(1)
-print(driver.window_handles)
+time.sleep(3)
+# Get new frame
+frame = driver.find_element(By.TAG_NAME, 'iframe')
+driver.switch_to.frame(frame)
+times = driver.find_elements(By.ID, 'StartTime')
+for element in times:
+    print(element.text)
+# Close popup
+close_button = driver.find_element(By.CLASS_NAME, 'closeText')
+close_button.click()
+time.sleep(3)
+
 driver.quit()
