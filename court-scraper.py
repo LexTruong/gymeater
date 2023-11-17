@@ -83,7 +83,7 @@ for i in range(stop_index):
     # info.append(court_info)
     line_info['times'] = t[5:]
 
-    info["line"].append(line_info)
+    info["lines"].append(line_info)
 
 # Create file again
 # with open('court_times.txt', 'w') as f:
