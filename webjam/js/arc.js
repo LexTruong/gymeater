@@ -81,7 +81,7 @@ for (let i = 0; i < textByLine.length; i++) {
   }
 
   // Modify the innter HTML of the element
-  element.innerHTML =  `${courtParts[1]} courts open from ${courtParts[2]}`;
+  element.innerHTML = `${courtParts[1]} courts open from ${courtParts[2]}`;
 }
 
 // Make sure closed courts say that they are closed
