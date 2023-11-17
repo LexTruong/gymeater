@@ -17,7 +17,12 @@ ul {
 }
   
 #logo {
-    float: left;
+  position: absolute;
+  top:-10px;
+  left:-10px;
+  float:left;
+  width: 5px;
+  height: 5px;
 }
 
 li {
