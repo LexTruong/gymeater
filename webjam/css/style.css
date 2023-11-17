@@ -9,8 +9,6 @@ body {
     /* background-image: url("/imgs/arc_outside2.jpg"); */
     height: 600px;
     text-align: center;
-    border-top: 4px solid black;
-    border-bottom: 4px solid black;
     padding-left: 200px;
 }
 
@@ -44,6 +42,7 @@ body {
 
 #navbar {
     background-color: white;
+    border-bottom: 4px solid black;
 }
 
 ul {
