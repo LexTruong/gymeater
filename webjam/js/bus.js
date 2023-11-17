@@ -21,3 +21,4 @@ if(curDay == 6 && (curHour < 8 || curHour > 21)) {
 } else {
     document.getElementById("answer").innerHTML = "SOMEWHAT BUSY";
 }
+
