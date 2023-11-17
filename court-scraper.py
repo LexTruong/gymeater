@@ -59,13 +59,13 @@ for i in range(stop_index):
     if 'Basketball' in court:
         court_info += 'Basketball,'
     elif 'Volleyball' in court:
-        court_info += 'Voleyball,'
+        court_info += 'Volleyball,'
     elif 'Badminton' in court:
         court_info += 'Badminton,'
     
     # Get the num
     if '&' in court:
-        court_info += '2.'
+        court_info += '2,'
     else:
         court_info += '1,'
 

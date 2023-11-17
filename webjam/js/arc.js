@@ -31,3 +31,22 @@ function joinTeam(button) {
 
     row.cells[3].innerHTML = prevNames + ', ' + name;
 }
+
+// Get available courts
+import * as fs from 'fs';
+
+const text = fs.readFileSync('../court_times.txt', 'utf8');
+
+const lines = text.split('\n');
+
+for (const line of lines) {
+    let info = line.split(",");
+    console.log(info)
+    let sport = info[0];
+    let courts = info[1];
+    let time = info[2];
+
+    if(sport == "Basketball") {
+        document.getElementById("basketballcourt").innerHTML = `<h2 style='color: green'>OPEN on Main Gym Court(s) ${courts} ${time}`;
+    }
+}
