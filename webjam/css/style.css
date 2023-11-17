@@ -162,6 +162,7 @@ h3 {
 }
 
 .text-desc {
+    position: relative;
     overflow: hidden;
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     font-size: 25px;

@@ -108,3 +108,18 @@ table {
   tr:nth-child(odd) {
     background-color: white;
   }
+
+#basket {
+    width: 150px;
+    height: 150px;
+}
+
+#volley {
+    width: 150px;
+    height: 150px;
+}
+
+#badm {
+    width: 150px;
+    height: 150px;
+}
