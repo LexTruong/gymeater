@@ -1,4 +1,3 @@
-
 let fs = require('fs');
 let textByLine = fs.readFileSync('court_times.txt').toString().split("\n");
 if (textByLine.indexOf('') != -1){

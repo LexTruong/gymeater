@@ -3,10 +3,14 @@ var curHour = curTime.getHours();
 var curMins = curTime.getMinutes();
 var curDay = curTime.getDay();
 var AM = "AM";
-if(curHour > 12) AM = "PM";
+if(curHour >= 12) AM = "PM";
 if(curMins < 10) curMins = "0" + curMins;
 
-document.getElementById("curtime").innerHTML = `The time is ${curHour%12}:${curMins} ${AM} and the ARC is currently`;
+let displayHour;
+if(curHour == 12) displayHour = 12;
+else displayHour = curHour % 12;
+
+document.getElementById("curtime").innerHTML = `The time is ${displayHour}:${curMins} ${AM} and the ARC is currently`;
 
 if(curDay == 6 && (curHour < 8 || curHour > 21)) {
     document.getElementById("answer").innerHTML = "CLOSED";
