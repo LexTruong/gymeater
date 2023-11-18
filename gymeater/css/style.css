@@ -219,13 +219,13 @@ h3 {
     width: 375px;
     height: 325px;
     left: 950px;
-    top: 775px;
+    top: 725px;
 }
 
 #work1 {
     position: absolute;
     left: 375px;
-    top: 1150px;
+    top: 1100px;
     width: 325px;
     height: 330px;
 }
@@ -235,7 +235,8 @@ h3 {
     width: 350px;
     height: 300px;
     left: 950px;
-
+    top: 1500px;
+    padding-bottom: 50px;
 }
 
 
