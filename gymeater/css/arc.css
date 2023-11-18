@@ -74,7 +74,7 @@ li a:hover {
 
 #displayteams {
     float: left;
-    margin-left: 20px;
+    margin-left: -100px;
 }
 
 #team {
@@ -84,6 +84,7 @@ li a:hover {
 
 #nameinput {
     padding-bottom: 20px;
+    margin-left: 200px;
 }
 
 #timechoice {
@@ -91,6 +92,7 @@ li a:hover {
 }
 
 #options {
+    margin-left: 200px;
     padding-bottom: 20px;
 }
 
@@ -140,3 +142,14 @@ table {
 #badmintoncourt {
     color: red;
 }
+
+#teambutt {
+    background-color: white;
+    border: none;
+    padding: 15px 32px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
