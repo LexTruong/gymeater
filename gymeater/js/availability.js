@@ -1,50 +1,46 @@
 // Reads JSON file and changes HTML
-import data from '../../court_info.json' assert {type: 'json'}
-console.log(data)
+// import data from '../../court_info.json' assert {type: 'json'}
+// console.log(data)
 
-let lines = data.lines;
-lines.forEach((line) => {
-  let sport = line.name;
-  let times = line.times;
+// let lines = data.lines;
+// lines.forEach((line) => {
+//   let sport = line.name;
+//   let times = line.times;
 
-if(sport == "Basketball"){
-  let element = document.getElementById("basketballTimes");
-  element.innerHTML = `<h3 style='color: green'>OPEN on Main Gym Courts 1 and 2 from ${times}</h3>`;
-}
-else if(sport == "Volleyball"){
-  let element = document.getElementById("volleyballTimes");
-  element.innerHTML = `<h3 style='color: green'>OPEN on Main Gym Court 3 from ${times}</h3>`;
-}
-else {
-  let element = document.getElementById("badmintonTimes");
-  element.innerHTML = `<h3 style='color: green'>OPEN in Back Court Gym from ${times}</h3>`;
-}
-})
+// if(sport == "Basketball"){
+//   let element = document.getElementById("basketballTimes");
+//   element.innerHTML = `<h3 style='color: green'>OPEN on Main Gym Courts 1 and 2 from ${times}</h3>`;
+// }
+// else if(sport == "Volleyball"){
+//   let element = document.getElementById("volleyballTimes");
+//   element.innerHTML = `<h3 style='color: green'>OPEN on Main Gym Court 3 from ${times}</h3>`;
+// }
+// else {
+//   let element = document.getElementById("badmintonTimes");
+//   element.innerHTML = `<h3 style='color: green'>OPEN in Back Court Gym from ${times}</h3>`;
+// }
+// })
 
-// fetch('../../court_info.json').then(response => response.json()).then(data => {
-//     let lines = data.lines;
-//     console.log(data)
-//     console.log(lines)
-//     lines.forEach((line) => {
-//       let sport = line.name;
-//       let times = line.times;
-//       console.log(sport)
-//       console.log(times)
+fetch('../../court_info.json').then(response => response.json()).then(data => {
+    let lines = data.lines;
+    lines.forEach((line) => {
+      let sport = line.name;
+      let times = line.times;
   
-//     if(sport == "Basketball"){
-//       let element = document.getElementById("basketballTimes");
-//       element.innerHTML = `<h3 style='color: green'>OPEN on Main Gym Courts 1 and 2 from ${times}</h3>`;
-//     }
-//     else if(sport == "Volleyball"){
-//       let element = document.getElementById("volleyballTimes");
-//       element.innerHTML = `<h3 style='color: green'>OPEN on Main Gym Court 3 from ${times}</h3>`;
-//     }
-//     else {
-//       let element = document.getElementById("badmintonTimes");
-//       element.innerHTML = `<h3 style='color: green'>OPEN in Back Court Gym from ${times}</h3>`;
-//     }
-//     })
-//   })
+    if(sport == "Basketball"){
+      let element = document.getElementById("basketballTimes");
+      element.innerHTML = `<h3 style='color: green'>OPEN on Main Gym Courts 1 and 2 from ${times}</h3>`;
+    }
+    else if(sport == "Volleyball"){
+      let element = document.getElementById("volleyballTimes");
+      element.innerHTML = `<h3 style='color: green'>OPEN on Main Gym Court 3 from ${times}</h3>`;
+    }
+    else {
+      let element = document.getElementById("badmintonTimes");
+      element.innerHTML = `<h3 style='color: green'>OPEN in Back Court Gym from ${times}</h3>`;
+    }
+    })
+  })
 
   // Get available courts
 // import * as fs from 'fs';
