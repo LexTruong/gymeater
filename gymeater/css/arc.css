@@ -53,7 +53,7 @@ li a:hover {
 
 #courts {
     text-align: center;
-    height: 500px;
+    height: 550px;
 }
 
 .row {
@@ -122,6 +122,7 @@ table {
 }
 
 #volley {
+    padding-top: 50px;
     width: 150px;
     height: 150px;
 }
