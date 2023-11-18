@@ -1,2 +1,0 @@
-Basketball,2,6:00 AM  - 5:00 PM
-Badminton,1,12:00 PM  - 11:30 PM
