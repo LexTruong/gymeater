@@ -55,45 +55,45 @@ function joinTeam(button) {
 
 // Controls open courts
 // Grabs text from the file w/ scraping info as a list
-let fs = require('fs');
-let textByLine = fs.readFileSync('court_times.txt').toString().split("\n");
+// let fs = require('fs');
+// let textByLine = fs.readFileSync('court_times.txt').toString().split("\n");
 
-// Keep track of which sports do not have open courts
-let openCourts = [];
+// // Keep track of which sports do not have open courts
+// let openCourts = [];
 
-for (let i = 0; i < textByLine.length; i++) {
-  court = textByLine[i]
-  // Split by comma to get different components
-  let courtParts = court.split(',');
-  // See which sport is open
-  let sport = courtParts[0]
-  if (sport === "Basketball"){
-    let element = document.getElementById("basketballTimes");
-    openCourts.push("Basketball");
-  }
-  else if (sport == "Volleyball"){
-    let element = document.getElementById("volleyballTimes");
-    openCourts.push("Volleyball");
-  }
-  else{
-    let element = document.getElementById("badmintonTimes");
-    openCourts.push("Badminton");
-  }
+// for (let i = 0; i < textByLine.length; i++) {
+//   court = textByLine[i]
+//   // Split by comma to get different components
+//   let courtParts = court.split(',');
+//   // See which sport is open
+//   let sport = courtParts[0]
+//   if (sport === "Basketball"){
+//     let element = document.getElementById("basketballTimes");
+//     openCourts.push("Basketball");
+//   }
+//   else if (sport == "Volleyball"){
+//     let element = document.getElementById("volleyballTimes");
+//     openCourts.push("Volleyball");
+//   }
+//   else{
+//     let element = document.getElementById("badmintonTimes");
+//     openCourts.push("Badminton");
+//   }
 
-  // Modify the innter HTML of the element
-  element.innerHTML = `${courtParts[1]} courts open from ${courtParts[2]}`;
-}
+//   // Modify the innter HTML of the element
+//   element.innerHTML = `${courtParts[1]} courts open from ${courtParts[2]}`;
+// }
 
-// Make sure closed courts say that they are closed
-if (!openCourts.includes("Basketball")){
-  let element = document.getElementById("basketballTimes"); 
-  element.innerHTML = "Closed for Drop-In";
-}
-if (!openCourts.includes("Volleyball")){
-  let element = document.getElementById("volleyballTimes");
-  element.innerHTML = "Closed for Drop-In";
-}
-if (!openCourts.includes("Badminton")){
-  let element = document.getElementById("badmintonTimes");
-  element.innerHTML = "Closed for Drop-In";
-}
+// // Make sure closed courts say that they are closed
+// if (!openCourts.includes("Basketball")){
+//   let element = document.getElementById("basketballTimes"); 
+//   element.innerHTML = "Closed for Drop-In";
+// }
+// if (!openCourts.includes("Volleyball")){
+//   let element = document.getElementById("volleyballTimes");
+//   element.innerHTML = "Closed for Drop-In";
+// }
+// if (!openCourts.includes("Badminton")){
+//   let element = document.getElementById("badmintonTimes");
+//   element.innerHTML = "Closed for Drop-In";
+// }
